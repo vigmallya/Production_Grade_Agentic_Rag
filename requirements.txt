@@ -24,3 +24,8 @@ pdfplumber                 # Library for extracting text and tables from PDF fil
 #For observability and monitoring
 logfire[fastapi,requests]  # Logging and monitoring library for FastAPI and requests.[A pydantic-based logfire - traces the ingestion pipeline.]
 loguru                     # Logging library for structured logging and log management which enhance logging capabilities for python applications.
+
+
+flashrank                  # Library for ranking and scoring documents based on relevance and importance.
+langgraph                  # Library for building and analyzing workflows and pipelines in a visual manner.
+langchain-groq            # LangChain integration for Groq API, enabling the use of Groq's capabilities within LangChain workflows.
