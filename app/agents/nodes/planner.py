@@ -1,14 +1,14 @@
 from app.agents.state import AgentState
-# from app.gateway import get_langchain_llm
+from app.gateway.client import get_langchain_llm   #planner node will use the Portkey-backed LLM to determine if a search is needed
 import logfire
 from langchain_groq import ChatGroq
 from app.config import settings
 
 # Using the Groq API for LLM interactions
-llm = ChatGroq(api_key=settings.GROQ_API_KEY, model=settings.GROQ_MODEL, temperature=0)
+# llm = ChatGroq(api_key=settings.GROQ_API_KEY, model=settings.GROQ_MODEL, temperature=0)
 
 # Portkey-backed LLM: fallback + cache + retry — same .invoke() interface as ChatGroq
-# llm = get_langchain_llm(feature="planner")
+llm = get_langchain_llm(feature="planner")
 
 def planner_node(state: AgentState):
     """
