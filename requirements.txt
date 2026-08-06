@@ -29,3 +29,13 @@ loguru                     # Logging library for structured logging and log mana
 flashrank                  # Library for ranking and scoring documents based on relevance and importance.
 langgraph                  # Library for building and analyzing workflows and pipelines in a visual manner.
 langchain-groq            # LangChain integration for Groq API, enabling the use of Groq's capabilities within LangChain workflows.
+
+#For Guardrails and security
+nemoguardrails             #NVIDIA guardrails for input/output validation and security in AI applications.
+langchain-nvidia-ai-endpoints # LangChain integration for NVIDIA AI endpoints, enabling secure and efficient interactions with NVIDIA's AI services.
+langchain-google-vertexai    # Required shim for Nemo Guardrails to work with Google Vertex AI endpoints, ensuring compatibility and seamless integration for AI applications.
+
+#LLM Gateways
+portkey-ai                    # Library for managing and interacting with LLM gateways, enabling seamless integration with various language models and APIs.
+
+langchain-openai           # LangChain integration for OpenAI API, enabling the use of OpenAI's capabilities within LangChain workflows.
