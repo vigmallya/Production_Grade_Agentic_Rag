@@ -1,19 +1,19 @@
-#For core API and Web framework
+# ------- For core API and Web framework -------
 fastapi                 # High performance web framework for building APIs.
 uvicorn[standard]       # ASGI server for running FastAPI applications.
 python-dotenv           # Load environment variables from a .env file.
 requests                # HTTP library for making API requests.
 numpy                   # Library for numerical computing.
 
-#For embeddings
+# ------- For embeddings -------
 google-generativeai     # Google Generative AI library.
 langchain-google-genai # LangChain integration for Google Generative AI.
 sentence-transformers   # Library for generating sentence embeddings.
 
-#For vector database
+# ------- For vector database -------
 qdrant-client          # Qdrant client for interacting with the Qdrant vector database. and semantic search.
 
-#For data ingestion and document parsing/processing
+# ------- For data ingestion and document parsing/processing -------
 unstructured               # Library for parsing and processing unstructured data.
 python-docx                # Library/ parser for working with Microsoft Word documents.
 python-pptx                # Library/parser for working with Microsoft PowerPoint presentations.
@@ -21,7 +21,7 @@ pypdf                      # Local PDF text extraction library.
 beautifulsoup4             # Library for parsing HTML/Extracting HTML text and XML documents.
 pdfplumber                 # Library for extracting text and tables from PDF files.
 
-#For observability and monitoring
+# ------- For observability and monitoring -------
 logfire[fastapi,requests]  # Logging and monitoring library for FastAPI and requests.[A pydantic-based logfire - traces the ingestion pipeline.]
 loguru                     # Logging library for structured logging and log management which enhance logging capabilities for python applications.
 
@@ -30,12 +30,17 @@ flashrank                  # Library for ranking and scoring documents based on 
 langgraph                  # Library for building and analyzing workflows and pipelines in a visual manner.
 langchain-groq            # LangChain integration for Groq API, enabling the use of Groq's capabilities within LangChain workflows.
 
-#For Guardrails and security
+# ------- For Guardrails and security -------
 nemoguardrails             #NVIDIA guardrails for input/output validation and security in AI applications.
 langchain-nvidia-ai-endpoints # LangChain integration for NVIDIA AI endpoints, enabling secure and efficient interactions with NVIDIA's AI services.
 langchain-google-vertexai    # Required shim for Nemo Guardrails to work with Google Vertex AI endpoints, ensuring compatibility and seamless integration for AI applications.
 
-#LLM Gateways
+# ------- LLM Gateways -------
 portkey-ai                    # Library for managing and interacting with LLM gateways, enabling seamless integration with various language models and APIs.
 
 langchain-openai           # LangChain integration for OpenAI API, enabling the use of OpenAI's capabilities within LangChain workflows.
+
+# ------- EVALUATION (EVALS) -------
+ragas                       # RAG-specific evaluation metrics (Faithfulness, Relevancy, Recall)
+deepeval                    # Pytest-compatible test runner wrapping RAGAS & safety metrics
+langfuse                    # Live production monitoring, tracing & user feedback collection
