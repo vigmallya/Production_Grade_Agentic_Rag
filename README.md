@@ -188,7 +188,3 @@ Scores pipeline outputs against `evals/golden_dataset.json` using RAGAS metrics.
 - The chunker (`chunk_text`) is a simple paragraph-based splitter, not a semantic or token-aware chunker — very large paragraphs are not split further.
 - The eval pipeline is tuned around Groq's free-tier rate limits (batching + cooldowns) and will run slowly by design; a paid tier would allow much faster evaluation.
 - Guardrail topic/jailbreak detection is example-based (few-shot Colang definitions), not a trained classifier — coverage is only as good as the listed examples.
-
-## License
-
-*Add license information here.*
